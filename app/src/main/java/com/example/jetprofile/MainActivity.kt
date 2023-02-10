@@ -78,7 +78,7 @@ class MainActivity : ComponentActivity() {
                             // 学部名
                             Text(
                                 text = "Faculty of Engineering",
-                                fontSize = 14.sp,
+                                fontSize = 16.sp,
                                 color = Color.Gray,
                             )
                         }

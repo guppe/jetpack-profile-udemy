@@ -60,6 +60,15 @@ class MainActivity : ComponentActivity() {
                             fontSize = 14.sp,
                             fontWeight = FontWeight.ExtraBold,
                         )
+                        Spacer(modifier = Modifier.height(20.dp))
+
+                        // プロフィール情報
+                        Column(
+                            horizontalAlignment = Alignment.Start,
+                            modifier = Modifier.fillMaxWidth(),
+                        ) {
+
+                        }
                     }
                 }
             }

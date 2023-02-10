@@ -73,6 +73,14 @@ class MainActivity : ComponentActivity() {
                                 fontSize = 20.sp,
                                 fontWeight = FontWeight.Bold,
                             )
+                            Spacer(modifier = Modifier.height(20.dp))
+
+                            // 学部名
+                            Text(
+                                text = "Faculty of Engineering",
+                                fontSize = 14.sp,
+                                color = Color.Gray,
+                            )
                         }
                     }
                 }

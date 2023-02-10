@@ -67,7 +67,12 @@ class MainActivity : ComponentActivity() {
                             horizontalAlignment = Alignment.Start,
                             modifier = Modifier.fillMaxWidth(),
                         ) {
-
+                            // 大学名
+                            Text(
+                                text = "Kanazawa Institute of Technology",
+                                fontSize = 20.sp,
+                                fontWeight = FontWeight.Bold,
+                            )
                         }
                     }
                 }

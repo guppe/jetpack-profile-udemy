@@ -20,7 +20,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.jetprofile.ui.theme.JetProfileTheme
-import java.sql.Driver
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -98,6 +97,17 @@ class MainActivity : ComponentActivity() {
                                 thickness = 2.dp,
                             )
                         }
+                        Spacer(modifier = Modifier.height(20.dp))
+
+                        // 詳細表示ボタン
+                        Button(
+                            modifier = Modifier.fillMaxWidth(),
+                            colors = ButtonDefaults.buttonColors(backgroundColor = Color(0xFFF85F6A)),
+                            onClick = { /*TODO*/ }
+                        ) {
+                            Text(text = "Show Details", color = Color.White)
+                        }
+
                     }
                 }
             }

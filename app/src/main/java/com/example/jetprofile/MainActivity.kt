@@ -10,6 +10,8 @@ import androidx.compose.material.Icon
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Email
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -84,6 +86,10 @@ class MainActivity : ComponentActivity() {
                                 fontSize = 16.sp,
                                 color = Color.Gray,
                             )
+                            Spacer(modifier = Modifier.height(20.dp))
+
+                            // Email
+                            Label(icon = Icons.Default.Email, text = "Email")
                         }
                     }
                 }

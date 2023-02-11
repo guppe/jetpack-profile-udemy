@@ -6,10 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Icon
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
+import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Email
 import androidx.compose.runtime.Composable
@@ -23,6 +20,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.jetprofile.ui.theme.JetProfileTheme
+import java.sql.Driver
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -90,6 +88,15 @@ class MainActivity : ComponentActivity() {
 
                             // Email
                             Label(icon = Icons.Default.Email, text = "Email")
+                            Spacer(modifier = Modifier.height(10.dp))
+                            Text(
+                                text = "hoge@gmail.com",
+                                fontSize = 16.sp,
+                            )
+                            Divider(
+                                modifier = Modifier.clip(RoundedCornerShape(1000.dp)),
+                                thickness = 2.dp,
+                            )
                         }
                     }
                 }

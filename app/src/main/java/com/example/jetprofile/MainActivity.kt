@@ -11,6 +11,7 @@ import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Email
 import androidx.compose.material.icons.filled.Favorite
+import androidx.compose.material.icons.filled.LocationOn
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -111,7 +112,7 @@ class MainActivity : ComponentActivity() {
                         }
                         Spacer(modifier = Modifier.height(20.dp))
 
-                        // 趣味・移住地
+                        // 趣味・居住地
                         Column(
                             modifier = Modifier
                                 .fillMaxWidth()
@@ -123,6 +124,14 @@ class MainActivity : ComponentActivity() {
                             Label(
                                 icon = Icons.Default.Favorite,
                                 text = "Sing",
+                                color = Color.Gray
+                            )
+                            Spacer(modifier = Modifier.height(20.dp))
+
+                            // 居住地
+                            Label(
+                                icon = Icons.Default.LocationOn,
+                                text = "Japan",
                                 color = Color.Gray
                             )
                         }
